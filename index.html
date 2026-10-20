@@ -45,6 +45,15 @@
     } */
 
     /* ===== Hero headline sizing ===== */
+    /* #hero sits outside #main, so it ignores the 300px sidebar offset and
+       centres on the full viewport. Pad it so the name and tagline centre
+       within the visible content area instead. */
+    @media (min-width: 1200px) {
+      #hero {
+        padding-left: 300px;
+      }
+    }
+
     #hero .hero-container {
       max-width: 860px;
       padding: 0 18px;
